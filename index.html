@@ -11,37 +11,48 @@
     <h1>Conversor de Unidades</h1>
   </header>
   <main>
+    <!-- Comprimento -->
     <section class="converter">
       <h2>Conversor de Comprimento</h2>
-      <label for="length-input">Quilômetros / Metros:</label>
-      <input type="number" id="length-input" placeholder="Digite o valor">
+      <label for="length-input">Digite o valor:</label>
+      <input type="number" id="length-input" placeholder="Ex.: 10">
       <select id="length-units">
         <option value="km-to-m">Quilômetros para Metros</option>
         <option value="m-to-km">Metros para Quilômetros</option>
+        <option value="m-to-cm">Metros para Centímetros</option>
+        <option value="cm-to-m">Centímetros para Metros</option>
+        <option value="cm-to-mm">Centímetros para Milímetros</option>
+        <option value="mm-to-cm">Milímetros para Centímetros</option>
       </select>
       <button onclick="convertLength()">Converter</button>
       <p id="length-result"></p>
     </section>
 
+    <!-- Temperatura -->
     <section class="converter">
       <h2>Conversor de Temperatura</h2>
-      <label for="temp-input">Celsius / Fahrenheit:</label>
-      <input type="number" id="temp-input" placeholder="Digite o valor">
+      <label for="temp-input">Digite o valor:</label>
+      <input type="number" id="temp-input" placeholder="Ex.: 25">
       <select id="temp-units">
         <option value="c-to-f">Celsius para Fahrenheit</option>
         <option value="f-to-c">Fahrenheit para Celsius</option>
+        <option value="c-to-k">Celsius para Kelvin</option>
+        <option value="k-to-c">Kelvin para Celsius</option>
       </select>
       <button onclick="convertTemperature()">Converter</button>
       <p id="temp-result"></p>
     </section>
 
+    <!-- Peso -->
     <section class="converter">
       <h2>Conversor de Peso</h2>
-      <label for="weight-input">Quilos / Libras:</label>
-      <input type="number" id="weight-input" placeholder="Digite o valor">
+      <label for="weight-input">Digite o valor:</label>
+      <input type="number" id="weight-input" placeholder="Ex.: 5">
       <select id="weight-units">
-        <option value="kg-to-lb">Quilos para Libras</option>
-        <option value="lb-to-kg">Libras para Quilos</option>
+        <option value="kg-to-g">Quilos para Gramas</option>
+        <option value="g-to-kg">Gramas para Quilos</option>
+        <option value="kg-to-t">Quilos para Toneladas</option>
+        <option value="t-to-kg">Toneladas para Quilos</option>
       </select>
       <button onclick="convertWeight()">Converter</button>
       <p id="weight-result"></p>
