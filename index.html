@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Unidades</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Conversor de Unidades</h1>
+  </header>
+  <main>
+    <section class="converter">
+      <h2>Conversor de Comprimento</h2>
+      <label for="length-input">Quilômetros / Metros:</label>
+      <input type="number" id="length-input" placeholder="Digite o valor">
+      <select id="length-units">
+        <option value="km-to-m">Quilômetros para Metros</option>
+        <option value="m-to-km">Metros para Quilômetros</option>
+      </select>
+      <button onclick="convertLength()">Converter</button>
+      <p id="length-result"></p>
+    </section>
+
+    <section class="converter">
+      <h2>Conversor de Temperatura</h2>
+      <label for="temp-input">Celsius / Fahrenheit:</label>
+      <input type="number" id="temp-input" placeholder="Digite o valor">
+      <select id="temp-units">
+        <option value="c-to-f">Celsius para Fahrenheit</option>
+        <option value="f-to-c">Fahrenheit para Celsius</option>
+      </select>
+      <button onclick="convertTemperature()">Converter</button>
+      <p id="temp-result"></p>
+    </section>
+
+    <section class="converter">
+      <h2>Conversor de Peso</h2>
+      <label for="weight-input">Quilos / Libras:</label>
+      <input type="number" id="weight-input" placeholder="Digite o valor">
+      <select id="weight-units">
+        <option value="kg-to-lb">Quilos para Libras</option>
+        <option value="lb-to-kg">Libras para Quilos</option>
+      </select>
+      <button onclick="convertWeight()">Converter</button>
+      <p id="weight-result"></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Conversor de Unidades</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
